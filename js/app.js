@@ -87,7 +87,6 @@ function applyFeatureToggles() {
   const anyVisible = CONFIG.showSearch || CONFIG.showGenreFilter || CONFIG.showSort;
   if (controlsBar) controlsBar.style.display = anyVisible ? '' : 'none';
 }
-}
 function populateGenreFilter() {
   const genres = [...new Set(state.books.map(book => book.genre).filter(Boolean))].sort((a, b) =>
     a.localeCompare(b, 'de')
