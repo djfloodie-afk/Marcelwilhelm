@@ -17,16 +17,19 @@
  * ohne HTML anfassen zu müssen. Einfach true/false umstellen.
  */
 const CONFIG = {
-  showSearch: false // Suchfeld in der Steuerleiste ein-/ausblenden
+  showSearch: false,
+  showGenreFilter: false,
+  showSort: false
 };
 
 // ---------------------------------------------------------------------------
 // Zentraler State: hält die geladenen Bücher und den aktuellen Filterzustand
 // ---------------------------------------------------------------------------
-const CONFIG = {
-  showSearch: false,
-  showGenreFilter: false,
-  showSort: false
+const state = {
+  books: [],
+  genre: 'all',
+  sort: 'new',
+  query: ''
 };
 
 // ---------------------------------------------------------------------------
