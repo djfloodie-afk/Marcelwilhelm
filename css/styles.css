@@ -79,10 +79,9 @@ img{ max-width:100%; display:block; }
    ========================================================================== */
 header.hero{
   position:relative;
-  min-height:88vh;
   display:flex;
   align-items:center;
-  padding:120px 0 80px;
+  padding:140px 0 70px;
   background:
     radial-gradient(ellipse 900px 500px at 15% -10%, rgba(255,90,31,.14), transparent 60%),
     radial-gradient(ellipse 700px 500px at 100% 20%, rgba(255,90,31,.08), transparent 60%),
@@ -133,7 +132,7 @@ header.hero{
 /* ==========================================================================
    Intro
    ========================================================================== */
-.intro{ padding:70px 0 20px; }
+.intro{ padding:36px 0 16px; }
 .intro p{
   font-size:1.3rem;
   line-height:1.6;
