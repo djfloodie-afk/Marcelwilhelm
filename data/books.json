@@ -2,8 +2,7 @@
  {
     "title": "Notfallsanitäter Azubi Tagebuch",
     "subtitle": "Design 1",
-    "description": "Eine Zeile pro Tag, fünf Jahre lang. So siehst du mit der Zeit, wie sich dein Leben verändert.",
-    "description": "Das Notfallsanitäter Azubi Tagebuch begleitet dich durch 45 Ausbildungstage – für Highlights, kuriose Momente und persönliche Reflexion.",
+    "description": "Dein täglicher Begleiter im Dienst – 45 Schichten, deine Reflexion.",
     "image": "images/books/NSAT_1.webp",
     "amazon": "https://amzn.to/3RuJeNf",
     "badge": "",
@@ -14,46 +13,56 @@
    {
     "title": "Notfallsanitäter Azubi Tagebuch",
     "subtitle": "Design 2",
-    "description": "Eine Zeile pro Tag, fünf Jahre lang. So siehst du mit der Zeit, wie sich dein Leben verändert.",
-    "description": "Das Notfallsanitäter Azubi Tagebuch begleitet dich durch 45 Ausbildungstage – für Highlights, kuriose Momente und persönliche Reflexion.",
+    "description": "Dein täglicher Begleiter im Dienst – 45 Schichten, deine Reflexion.",
     "image": "images/books/NSAT_2.webp",
-    "amazon": "https://amzn.to/3RuJeNf",
+    "amazon": "https://amzn.to/4fozvRI",
     "badge": "",
     "rating": 5,
     "genre": "Blaulicht Tagebücher",
     "featured": false
   },
   {
-    "title": "Rettungsdienst Tagebuch",
-    "subtitle": "Design 3 – Auffällig",
-    "description": "Das dritte Cover-Motiv – für alle, die es etwas auffälliger mögen.",
-    "image": "images/books/rettungsdienst-3.webp",
-    "amazon": "https://amzn.to/DEIN-LINK-RD-3",
+   "title": "Notfallsanitäter Azubi Tagebuch",
+    "subtitle": "Design 3",
+    "description": "Dein täglicher Begleiter im Dienst – 45 Schichten, deine Reflexion.",
+    "image": "images/books/NSAT_3.webp",
+    "amazon": "https://amzn.to/4yhfLXO",
     "badge": "",
-    "rating": 4,
-    "genre": "Rettungsdienst",
-    "featured": false
-  },
-  {
-    "title": "Rettungsdienst Tagebuch",
-    "subtitle": "Design 2 – Dezent",
-    "description": "Etwas dezenter gehalten, mit anderem Motiv auf dem Cover. Gleicher Inhalt, andere Optik.",
-    "image": "images/books/rettungsdienst-2.webp",
-    "amazon": "https://amzn.to/DEIN-LINK-RD-2",
-    "badge": "Neu",
-    "rating": 4,
-    "genre": "Rettungsdienst",
-    "featured": false
-  },
-  {
-    "title": "Rettungsdienst Tagebuch",
-    "subtitle": "Design 1 – Classic",
-    "description": "Das klassische Cover in dunklem Design. Für den Dienstalltag zum Festhalten und Reflektieren.",
-    "image": "images/books/rettungsdienst-1.webp",
-    "amazon": "https://amzn.to/DEIN-LINK-RD-1",
-    "badge": "Bestseller",
     "rating": 5,
-    "genre": "Rettungsdienst",
-    "featured": true
+    "genre": "Blaulicht Tagebücher",
+    "featured": false
+  },
+  {
+    "title": "Rettungssanitäter Tagebuch",
+    "subtitle": "Design 1",
+    "description": "Dein täglicher Begleiter im Dienst – 45 Einsätze, deine Reflexion.",
+    "image": "images/books/RST_1.webp",
+    "amazon": "https://amzn.to/4fbV6f7",
+    "badge": "",
+    "rating": 5,
+    "genre": "Blaulicht Tagebücher",
+    "featured": false
+  },
+  {
+    "title": "Rettungssanitäter Tagebuch",
+    "subtitle": "Design 2",
+    "description": "Dein täglicher Begleiter im Dienst – 45 Einsätze, deine Reflexion.",
+    "image": "images/books/RST_2.webp",
+    "amazon": "https://amzn.to/3ST6JzZ",
+    "badge": "",
+    "rating": 5,
+    "genre": "Blaulicht Tagebücher",
+    "featured": false
+  }
+   {
+    "title": "Rettungssanitäter Tagebuch",
+    "subtitle": "Design 3",
+    "description": "Dein täglicher Begleiter im Dienst – 45 Einsätze, deine Reflexion.",
+    "image": "images/books/RST_1.webp",
+    "amazon": "https://amzn.to/4eQk0Su",
+    "badge": "",
+    "rating": 5,
+    "genre": "Blaulicht Tagebücher",
+    "featured": false
   }
 ]
