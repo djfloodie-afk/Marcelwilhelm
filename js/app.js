@@ -17,6 +17,13 @@ const state = {
   genre: 'all',
   sort: 'new',
   query: ''
+  /**
+ * Feature-Schalter: hier kannst du einzelne Elemente ein-/ausblenden,
+ * ohne HTML anfassen zu müssen. Einfach true/false umstellen.
+ */
+const CONFIG = {
+  showSearch: false // Suchfeld in der Steuerleiste ein-/ausblenden
+};
 };
 
 // ---------------------------------------------------------------------------
@@ -50,6 +57,7 @@ async function init() {
   }
 
   populateGenreFilter();
+  applyFeatureToggles();
   renderHero();
   applyFilters();
   bindEvents();
@@ -60,6 +68,12 @@ async function init() {
 // Genre-Filter automatisch aus den vorhandenen Büchern befüllen.
 // Neues Genre in books.json -> taucht hier automatisch auf, kein Code nötig.
 // ---------------------------------------------------------------------------
+function applyFeatureToggles() {
+  const searchWrapper = els.search.closest('.control-search');
+  if (searchWrapper) {
+    searchWrapper.style.display = CONFIG.showSearch ? '' : 'none';
+  }
+}
 function populateGenreFilter() {
   const genres = [...new Set(state.books.map(book => book.genre).filter(Boolean))].sort((a, b) =>
     a.localeCompare(b, 'de')
