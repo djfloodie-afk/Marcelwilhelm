@@ -12,18 +12,22 @@
 // ---------------------------------------------------------------------------
 // Zentraler State: hält die geladenen Bücher und den aktuellen Filterzustand
 // ---------------------------------------------------------------------------
-const state = {
-  books: [],
-  genre: 'all',
-  sort: 'new',
-  query: ''
-  /**
+/**
  * Feature-Schalter: hier kannst du einzelne Elemente ein-/ausblenden,
  * ohne HTML anfassen zu müssen. Einfach true/false umstellen.
  */
 const CONFIG = {
   showSearch: false // Suchfeld in der Steuerleiste ein-/ausblenden
 };
+
+// ---------------------------------------------------------------------------
+// Zentraler State: hält die geladenen Bücher und den aktuellen Filterzustand
+// ---------------------------------------------------------------------------
+const state = {
+  books: [],
+  genre: 'all',
+  sort: 'new',
+  query: ''
 };
 
 // ---------------------------------------------------------------------------
