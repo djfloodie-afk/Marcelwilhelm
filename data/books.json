@@ -11,15 +11,16 @@
     "genre": "Blaulicht Tagebücher",
     "featured": false
   },
-  {
-    "title": "111 Tage Dankbarkeit",
-    "subtitle": "Dein tägliches Dankbarkeitsjournal",
-    "description": "Drei Zeilen am Abend, ein Blick nach vorn am Morgen. Für alle, die bewusster leben möchten.",
-    "image": "images/books/dankbarkeit-1.webp",
-    "amazon": "https://amzn.to/DEIN-LINK-DANK-1",
-    "badge": "Beliebt",
+   {
+    "title": "Notfallsanitäter Azubi Tagebuch",
+    "subtitle": "Design 2",
+    "description": "Eine Zeile pro Tag, fünf Jahre lang. So siehst du mit der Zeit, wie sich dein Leben verändert.",
+    "description": "Das Notfallsanitäter Azubi Tagebuch begleitet dich durch 45 Ausbildungstage – für Highlights, kuriose Momente und persönliche Reflexion.",
+    "image": "images/books/NSAT_2.webp",
+    "amazon": "https://amzn.to/3RuJeNf",
+    "badge": "",
     "rating": 5,
-    "genre": "Achtsamkeit",
+    "genre": "Blaulicht Tagebücher",
     "featured": false
   },
   {
