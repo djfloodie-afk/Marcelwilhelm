@@ -76,9 +76,17 @@ async function init() {
 // ---------------------------------------------------------------------------
 function applyFeatureToggles() {
   const searchWrapper = els.search.closest('.control-search');
-  if (searchWrapper) {
-    searchWrapper.style.display = CONFIG.showSearch ? '' : 'none';
-  }
+  const genreWrapper = els.genre.closest('.control-group');
+  const sortWrapper = els.sort.closest('.control-group');
+
+  if (searchWrapper) searchWrapper.style.display = CONFIG.showSearch ? '' : 'none';
+  if (genreWrapper) genreWrapper.style.display = CONFIG.showGenreFilter ? '' : 'none';
+  if (sortWrapper) sortWrapper.style.display = CONFIG.showSort ? '' : 'none';
+
+  const controlsBar = document.querySelector('.controls');
+  const anyVisible = CONFIG.showSearch || CONFIG.showGenreFilter || CONFIG.showSort;
+  if (controlsBar) controlsBar.style.display = anyVisible ? '' : 'none';
+}
 }
 function populateGenreFilter() {
   const genres = [...new Set(state.books.map(book => book.genre).filter(Boolean))].sort((a, b) =>
