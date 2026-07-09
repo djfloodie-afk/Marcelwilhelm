@@ -361,6 +361,24 @@ footer p{
    ========================================================================== */
 @media (max-width:600px){
   .wrap{ padding:0 20px; }
-  header.hero{ padding:100px 0 60px; min-height:auto; }
-  .controls{ flex-direction:column; align-items:stretch; }
+  header.hero{ padding:100px 0 60px; }
+  .controls{
+    flex-direction:column;
+    align-items:stretch;
+    gap:14px;
+    padding:16px;
+  }
+  .control-search{
+    flex:0 0 auto;
+    width:100%;
+  }
+  .control-group{
+    flex:0 0 auto;
+    width:100%;
+    justify-content:space-between;
+  }
+  .control-group select{
+    flex:1;
+    max-width:65%;
+  }
 }
