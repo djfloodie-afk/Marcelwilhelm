@@ -339,21 +339,21 @@ header.hero{
    Footer
    ========================================================================== */
 footer{
-  padding:90px 0 50px;
+  padding:60px 0 40px;
   border-top:1px solid rgba(255,90,31,.14);
   margin-top:40px;
 }
 footer .foot-title{
   font-weight:700;
-  font-size:1.3rem;
+  font-size:1rem;
   color:var(--accent-soft);
-  margin-bottom:14px;
+  margin-bottom:8px;
 }
 footer p{
   max-width:60ch;
   color:var(--ink-dim);
-  font-size:.85rem;
-  line-height:1.6;
+  font-size:.7rem;
+  line-height:1.5;
 }
 
 /* ==========================================================================
