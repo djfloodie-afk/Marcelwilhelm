@@ -2,7 +2,18 @@
   {
     "title": "Notfallsanitäter Azubi Tagebuch",
     "subtitle": "Design 1",
-    "description": "Eine Zeile pro Tag, fünf Jahre lang. So siehst du mit der Zeit, wie sich dein Leben verändert.",
+    "description": "Das Notfallsanitäter Azubi Tagebuch begleitet dich durch 45 Ausbildungstage – für Highlights, kuriose Momente und persönliche Reflexion.",
+    "image": "images/books/NSAT_1.webp",
+    "amazon": "https://amzn.to/3RuJeNf",
+    "badge": "",
+    "rating": 5,
+    "genre": "Blaulicht Tagebücher",
+    "featured": false
+  },
+{
+    "title": "Notfallsanitäter Azubi Tagebuch",
+    "subtitle": "Design 1",
+    "description": "Das Notfallsanitäter Azubi Tagebuch begleitet dich durch 45 Ausbildungstage – für Highlights, kuriose Momente und persönliche Reflexion.",
     "image": "images/books/NSAT_1.webp",
     "amazon": "https://amzn.to/3RuJeNf",
     "badge": "",
@@ -11,47 +22,14 @@
     "featured": false
   },
   {
-    "title": "111 Tage Dankbarkeit",
-    "subtitle": "Dein tägliches Dankbarkeitsjournal",
-    "description": "Drei Zeilen am Abend, ein Blick nach vorn am Morgen. Für alle, die bewusster leben möchten.",
-    "image": "images/books/dankbarkeit-1.webp",
-    "amazon": "https://amzn.to/DEIN-LINK-DANK-1",
-    "badge": "Beliebt",
-    "rating": 5,
-    "genre": "Achtsamkeit",
-    "featured": false
-  },
-  {
-    "title": "Rettungsdienst Tagebuch",
-    "subtitle": "Design 3 – Auffällig",
-    "description": "Das dritte Cover-Motiv – für alle, die es etwas auffälliger mögen.",
-    "image": "images/books/rettungsdienst-3.webp",
-    "amazon": "https://amzn.to/DEIN-LINK-RD-3",
+    "title": "Notfallsanitäter Azubi Tagebuch",
+    "subtitle": "Design 1",
+    "description": "Das Notfallsanitäter Azubi Tagebuch begleitet dich durch 45 Ausbildungstage – für Highlights, kuriose Momente und persönliche Reflexion.",
+    "image": "images/books/NSAT_1.webp",
+    "amazon": "https://amzn.to/3RuJeNf",
     "badge": "",
-    "rating": 4,
-    "genre": "Rettungsdienst",
-    "featured": false
-  },
-  {
-    "title": "Rettungsdienst Tagebuch",
-    "subtitle": "Design 2 – Dezent",
-    "description": "Etwas dezenter gehalten, mit anderem Motiv auf dem Cover. Gleicher Inhalt, andere Optik.",
-    "image": "images/books/rettungsdienst-2.webp",
-    "amazon": "https://amzn.to/DEIN-LINK-RD-2",
-    "badge": "Neu",
-    "rating": 4,
-    "genre": "Rettungsdienst",
-    "featured": false
-  },
-  {
-    "title": "Rettungsdienst Tagebuch",
-    "subtitle": "Design 1 – Classic",
-    "description": "Das klassische Cover in dunklem Design. Für den Dienstalltag zum Festhalten und Reflektieren.",
-    "image": "images/books/rettungsdienst-1.webp",
-    "amazon": "https://amzn.to/DEIN-LINK-RD-1",
-    "badge": "Bestseller",
     "rating": 5,
-    "genre": "Rettungsdienst",
-    "featured": true
-  }
+    "genre": "Blaulicht Tagebücher",
+    "featured": false
+  },
 ]
