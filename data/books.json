@@ -52,11 +52,21 @@
    {
     "title": "Rettungssanitäter Tagebuch",
     "subtitle": "Design 3",
-    "image": "images/books/RST_3.webp",
-    "amazon": "https://amzn.to/4eQk0Su",
+    "image": "images/books/PF_3.webp",
+    "amazon": "https://amzn.to/3QNYZi9",
     "badge": "",
     "rating": 5,
     "genre": "Blaulicht Tagebücher",
     "featured": false
-  }
+  },
+  {
+    "title": "Pflegekraft Tagebuch",
+    "subtitle": "Design 2",
+    "image": "images/books/PF_2.webp",
+    "amazon": "https://amzn.to/4aKSzqK",
+    "badge": "",
+    "rating": 5,
+    "genre": "Blaulicht Tagebücher",
+    "featured": false
+  },
 ]
