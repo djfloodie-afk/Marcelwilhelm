@@ -23,11 +23,10 @@ const CONFIG = {
 // ---------------------------------------------------------------------------
 // Zentraler State: hält die geladenen Bücher und den aktuellen Filterzustand
 // ---------------------------------------------------------------------------
-const state = {
-  books: [],
-  genre: 'all',
-  sort: 'new',
-  query: ''
+const CONFIG = {
+  showSearch: false,
+  showGenreFilter: false,
+  showSort: false
 };
 
 // ---------------------------------------------------------------------------
