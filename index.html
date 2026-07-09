@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tagebücher für die Momente, die zählen</title>
+<meta name="description" content="Handverlesene Tagebücher – in mehreren Designs, ein Zuhause.">
+
+<!-- Google Fonts: Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Lesebändchen: läuft mit dem Scrollfortschritt mit (Signature-Element) -->
+  <div class="ribbon-track" aria-hidden="true">
+    <div class="ribbon" id="ribbon">
+      <svg viewBox="0 0 22 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0 H22 V44 L11 60 L0 44 Z" fill="#ff5a1f"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- HERO: Titel/Text/Link werden per JS aus dem Buch mit "featured": true befüllt.
+       Der hier stehende Text ist der Fallback, falls kein Buch als featured markiert ist. -->
+  <header class="hero" id="hero">
+    <div class="wrap">
+      <span class="eyebrow">Für alle, die abends noch ein paar Zeilen schreiben</span>
+      <h1 id="hero-title">Ein Tagebuch<br>für jeden <span>Alltag.</span></h1>
+      <p class="lede" id="hero-subtitle">Handverlesene Tagebücher – jedes davon in mehreren Designs, damit du deins findest.</p>
+      <a class="hero-cta" id="hero-cta" href="#buecher">
+        Zur Sammlung
+        <svg viewBox="0 0 16 16" fill="none"><path d="M8 1v13M2 8l6 6 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="wrap">
+      <p class="reveal">Jedes Buch gibt es in mehreren Designs – such dir dein Lieblingscover aus und leg los.</p>
+    </div>
+  </section>
+
+  <section id="buecher">
+    <div class="wrap">
+
+      <!-- Steuerleiste: Suche, Genre-Filter, Sortierung. Wird automatisch aus books.json befüllt. -->
+      <div class="controls reveal">
+        <div class="control-search">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M14 14l4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <input type="search" id="search-input" placeholder="Buch suchen…" aria-label="Buch suchen">
+        </div>
+
+        <div class="control-group">
+          <label for="genre-filter">Genre</label>
+          <select id="genre-filter">
+            <option value="all">Alle</option>
+            <!-- Optionen werden automatisch aus den Genres in books.json generiert -->
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label for="sort-select">Sortierung</label>
+          <select id="sort-select">
+            <option value="new">Neu</option>
+            <option value="bestseller">Bestseller</option>
+            <option value="az">Alphabetisch</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Buchkarten werden hier von js/app.js eingefügt -->
+      <div class="grid" id="book-grid" aria-live="polite"></div>
+
+      <p class="empty-state" id="empty-state" hidden>Keine Bücher gefunden. Versuch einen anderen Suchbegriff oder Filter.</p>
+      <p class="flip-hint">Tippe ein Cover an, um mehr zu sehen.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-title">Danke, dass du vorbeischaust.</div>
+      <p>Affiliate-Hinweis: Diese Seite enthält Affiliate-Links, unter anderem zu Amazon. Wenn du über einen dieser Links etwas kaufst, erhalte ich ggf. eine kleine Provision – für dich entstehen dabei keine zusätzlichen Kosten.</p>
+    </div>
+  </footer>
+
+  <!-- Vorlage für eine einzelne Buchkarte. Wird von app.js pro Buch geklont und befüllt. -->
+  <template id="book-card-template">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-face book-front">
+          <div class="cover">
+            <img loading="lazy" decoding="async" src="" alt="">
+          </div>
+          <div class="variant-tag"></div>
+        </div>
+        <div class="book-face book-back">
+          <h3></h3>
+          <p class="back-subtitle"></p>
+          <p class="back-description"></p>
+          <div class="rating" aria-hidden="true"></div>
+          <div class="cta">
+            <a target="_blank" rel="noopener sponsored">Auf Amazon ansehen</a>
+            <span class="ad-tag">Werbung · Affiliate-Link</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
