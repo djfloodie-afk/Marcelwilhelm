@@ -1,13 +1,14 @@
 [
-  {
-    "title": "Das ruhige Jahr",
-    "subtitle": "5-Jahres-Tagebuch",
+ {
+    "title": "Notfallsanitäter Azubi Tagebuch",
+    "subtitle": "Design 1",
     "description": "Eine Zeile pro Tag, fünf Jahre lang. So siehst du mit der Zeit, wie sich dein Leben verändert.",
-    "image": "images/books/ruhiges-jahr.webp",
-    "amazon": "https://amzn.to/DEIN-LINK-JAHR",
+    "description": "Das Notfallsanitäter Azubi Tagebuch begleitet dich durch 45 Ausbildungstage – für Highlights, kuriose Momente und persönliche Reflexion.",
+    "image": "images/books/NSAT_1.webp",
+    "amazon": "https://amzn.to/3RuJeNf",
     "badge": "",
-    "rating": 4,
-    "genre": "Achtsamkeit",
+    "rating": 5,
+    "genre": "Blaulicht Tagebücher",
     "featured": false
   },
   {
