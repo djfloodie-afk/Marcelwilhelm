@@ -68,5 +68,15 @@
     "rating": 5,
     "genre": "Blaulicht Tagebücher",
     "featured": false
+  },
+    {
+    "title": "Feuerwehrmann Tagebuch",
+    "subtitle": "Design 1",
+    "image": "images/books/FWM_1.webp",
+    "amazon": "https://amzn.to/4ydK1CD",
+    "badge": "",
+    "rating": 5,
+    "genre": "Blaulicht Tagebücher",
+    "featured": false
   }
 ]
