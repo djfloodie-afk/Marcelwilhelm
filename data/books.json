@@ -79,11 +79,22 @@
     "genre": "Blaulicht Tagebücher",
     "featured": false
   },
+     
   {
     "title": "Rettungssanitäter Tagebuch",
     "subtitle": "Design 2",
     "image": "images/books/RST_2.webp",
     "amazon": "https://amzn.to/3ST6JzZ",
+    "badge": "",
+    "rating": 5,
+    "genre": "Blaulicht Tagebücher",
+    "featured": false
+  },
+      {
+    "title": "Rettungssanitäter Tagebuch",
+    "subtitle": "Design 3",
+    "image": "images/books/RST_3.webp",
+    "amazon": "https://amzn.to/4gCB93g",
     "badge": "",
     "rating": 5,
     "genre": "Blaulicht Tagebücher",
