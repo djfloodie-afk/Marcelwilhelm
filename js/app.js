@@ -171,6 +171,72 @@ function renderGrid(list) {
     const description = node.querySelector('.back-description');
     const rating = node.querySelector('.rating');
     const link = node.querySelector('.cta a');
+    const adTag = node.querySelector('.ad-tag');
+
+    img.src = book.image;
+    img.alt = `Cover: ${book.title}`;
+    tag.textContent = book.badge || book.genre || '';
+    title.textContent = book.title;
+    subtitle.textContent = book.subtitle || '';
+    description.textContent = book.description || '';
+    rating.textContent = renderStars(book.rating);
+    rating.setAttribute('aria-label', `Bewertung: ${book.rating || 0} von 5 Sternen`);
+
+    // Coming Soon: Buch ohne Link (comingSoon:true oder amazon leer) bekommt
+    // ein nicht-klickbares Label statt des Kauf-Buttons.
+    const isComingSoon = book.comingSoon === true || !book.amazon;
+    if (isComingSoon) {
+      tag.textContent = 'Demnächst verfügbar';
+      card.classList.add('is-coming-soon');
+      link.textContent = 'Demnächst verfügbar';
+      link.removeAttribute('href');
+      link.removeAttribute('target');
+      link.removeAttribute('rel');
+      link.classList.add('coming-soon');
+      adTag.style.display = 'none';
+    } else {
+      link.textContent = 'Auf Amazon ansehen';
+      link.href = book.amazon;
+      link.target = '_blank';
+      link.rel = 'noopener sponsored';
+      link.classList.remove('coming-soon');
+      adTag.style.display = '';
+    }
+
+    // Klick/Tap aufs Cover öffnet direkt den Amazon-Link (kein Flip mehr).
+    // Bei Coming-Soon-Büchern passiert nichts, da es noch keinen Link gibt.
+    card.addEventListener('click', () => {
+      if (isComingSoon) return;
+      window.open(book.amazon, '_blank', 'noopener');
+    });
+
+    fragment.appendChild(node);
+  });
+
+  els.grid.appendChild(fragment);
+
+  // Neu eingefügte Karten für die Scroll-Einblendung registrieren
+  els.grid.querySelectorAll('.book').forEach(card => {
+    card.classList.add('reveal');
+    revealObserver.observe(card);
+  });
+{
+  els.grid.innerHTML = '';
+  els.empty.hidden = list.length > 0;
+
+  const fragment = document.createDocumentFragment();
+
+  list.forEach(book => {
+    const node = els.template.content.cloneNode(true);
+
+    const card = node.querySelector('.book');
+    const img = node.querySelector('.cover img');
+    const tag = node.querySelector('.variant-tag');
+    const title = node.querySelector('h3');
+    const subtitle = node.querySelector('.back-subtitle');
+    const description = node.querySelector('.back-description');
+    const rating = node.querySelector('.rating');
+    const link = node.querySelector('.cta a');
 
     img.src = book.image;
     img.alt = `Cover: ${book.title}`;
