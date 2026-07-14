@@ -183,10 +183,12 @@ function renderGrid(list) {
     link.href = book.amazon;
 
     // Karte per Klick/Tap umblättern (Vorder-/Rückseite)
-    card.addEventListener('click', () => card.classList.toggle('flipped'));
-
-    fragment.appendChild(node);
-  });
+// Klick/Tap aufs Cover öffnet direkt den Amazon-Link (kein Flip mehr).
+// Bei Coming-Soon-Büchern passiert nichts, da es noch keinen Link gibt.
+card.addEventListener('click', () => {
+  if (isComingSoon) return;
+  window.open(book.amazon, '_blank', 'noopener');
+});
 
   els.grid.appendChild(fragment);
 
