@@ -229,10 +229,6 @@ header.hero{
   transform-style:preserve-3d;
   transition:transform .7s cubic-bezier(.2,.8,.2,1);
 }
-@media (hover:hover){
-  .book:hover .book-inner{ transform:rotateY(180deg); }
-}
-.book.flipped .book-inner{ transform:rotateY(180deg); }
 
 .book-face{
   position:absolute;
