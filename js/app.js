@@ -9,17 +9,14 @@
  * ---------------------------------------------------------------------------
  */
 
-// ---------------------------------------------------------------------------
-// Zentraler State: hält die geladenen Bücher und den aktuellen Filterzustand
-// ---------------------------------------------------------------------------
 /**
  * Feature-Schalter: hier kannst du einzelne Elemente ein-/ausblenden,
  * ohne HTML anfassen zu müssen. Einfach true/false umstellen.
  */
 const CONFIG = {
-  showSearch: false,
-  showGenreFilter: false,
-  showSort: false
+  showSearch: false,     // Suchfeld in der Steuerleiste ein-/ausblenden
+  showGenreFilter: false, // Genre-Dropdown ein-/ausblenden
+  showSort: false         // Sortierung ein-/ausblenden
 };
 
 // ---------------------------------------------------------------------------
@@ -71,8 +68,7 @@ async function init() {
 }
 
 // ---------------------------------------------------------------------------
-// Genre-Filter automatisch aus den vorhandenen Büchern befüllen.
-// Neues Genre in books.json -> taucht hier automatisch auf, kein Code nötig.
+// Blendet Steuerelemente je nach CONFIG ein oder aus (aktuell: Suche).
 // ---------------------------------------------------------------------------
 function applyFeatureToggles() {
   const searchWrapper = els.search.closest('.control-search');
@@ -83,10 +79,16 @@ function applyFeatureToggles() {
   if (genreWrapper) genreWrapper.style.display = CONFIG.showGenreFilter ? '' : 'none';
   if (sortWrapper) sortWrapper.style.display = CONFIG.showSort ? '' : 'none';
 
+  // Steuerleiste komplett ausblenden, wenn kein einziges Element übrig bleibt
   const controlsBar = document.querySelector('.controls');
   const anyVisible = CONFIG.showSearch || CONFIG.showGenreFilter || CONFIG.showSort;
   if (controlsBar) controlsBar.style.display = anyVisible ? '' : 'none';
 }
+
+// ---------------------------------------------------------------------------
+// Genre-Filter automatisch aus den vorhandenen Büchern befüllen.
+// Neues Genre in books.json -> taucht hier automatisch auf, kein Code nötig.
+// ---------------------------------------------------------------------------
 function populateGenreFilter() {
   const genres = [...new Set(state.books.map(book => book.genre).filter(Boolean))].sort((a, b) =>
     a.localeCompare(b, 'de')
@@ -212,49 +214,6 @@ function renderGrid(list) {
 
     fragment.appendChild(node);
   });
-
-  els.grid.appendChild(fragment);
-
-  // Neu eingefügte Karten für die Scroll-Einblendung registrieren
-  els.grid.querySelectorAll('.book').forEach(card => {
-    card.classList.add('reveal');
-    revealObserver.observe(card);
-  });
-{
-  els.grid.innerHTML = '';
-  els.empty.hidden = list.length > 0;
-
-  const fragment = document.createDocumentFragment();
-
-  list.forEach(book => {
-    const node = els.template.content.cloneNode(true);
-
-    const card = node.querySelector('.book');
-    const img = node.querySelector('.cover img');
-    const tag = node.querySelector('.variant-tag');
-    const title = node.querySelector('h3');
-    const subtitle = node.querySelector('.back-subtitle');
-    const description = node.querySelector('.back-description');
-    const rating = node.querySelector('.rating');
-    const link = node.querySelector('.cta a');
-
-    img.src = book.image;
-    img.alt = `Cover: ${book.title}`;
-    tag.textContent = book.badge || book.genre || '';
-    title.textContent = book.title;
-    subtitle.textContent = book.subtitle || '';
-    description.textContent = book.description || '';
-    rating.textContent = renderStars(book.rating);
-    rating.setAttribute('aria-label', `Bewertung: ${book.rating || 0} von 5 Sternen`);
-    link.href = book.amazon;
-
-    // Karte per Klick/Tap umblättern (Vorder-/Rückseite)
-// Klick/Tap aufs Cover öffnet direkt den Amazon-Link (kein Flip mehr).
-// Bei Coming-Soon-Büchern passiert nichts, da es noch keinen Link gibt.
-card.addEventListener('click', () => {
-  if (isComingSoon) return;
-  window.open(book.amazon, '_blank', 'noopener');
-});
 
   els.grid.appendChild(fragment);
 
