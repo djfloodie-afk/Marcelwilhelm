@@ -1,4 +1,44 @@
 [
+     {
+    "title": "Notfallsanitäter Azubi Tagebuch",
+    "subtitle": "Design 1",
+    "image": "images/books/A4.webp",
+    "amazon": "https://amzn.to/44urLYb",
+    "badge": "",
+    "rating": 5,
+    "genre": "",
+    "featured": false
+  },
+    {
+    "title": "Notfallsanitäter Tagebuch",
+    "subtitle": "Design 1",
+    "image": "images/books/A3.webp",
+    "amazon": "https://amzn.to/4phn9OG",
+    "badge": "",
+    "rating": 5,
+    "genre": "",
+    "featured": false
+  },
+   {
+    "title": "Azubi Tagebuch",
+    "subtitle": "Design 1",
+    "image": "images/books/A2.webp",
+    "amazon": "https://amzn.to/4fzv5rf",
+    "badge": "",
+    "rating": 5,
+    "genre": "",
+    "featured": false
+  },
+  {
+    "title": "Pflegekraft Tagebuch",
+    "subtitle": "Design 4",
+    "image": "images/books/A1.webp",
+    "amazon": "https://amzn.to/4vVhGzA",
+    "badge": "",
+    "rating": 5,
+    "genre": "",
+    "featured": false
+  },
  {
     "title": "Notfallsanitäter Azubi Tagebuch",
     "subtitle": "Design 1",
